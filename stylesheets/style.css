@@ -1,0 +1,301 @@
+
+@font-face {
+	font-family: 'OpenSans Regular';
+	src: url('../fonts/OpenSans-Regular.ttf');
+}	
+@font-face {
+	font-family: 'OpenSans Bold';
+	src: url('../fonts/OpenSans-Bold.ttf');
+}
+@font-face {
+	font-family: 'CrimsonText Roman';
+	src: url('../fonts/CrimsonText-Roman.ttf');
+}
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../fonts/fontawesome-webfont.ttf');
+}
+
+
+body {
+	font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica", Arial, "MS Trebuchet", sans-serif;
+	width: 100%;
+}
+
+h1, h2 {
+	font-family: 'OpenSans Bold', Helvetica, Arial, "MS Trebuchet", sans-serif;
+	font-weight: bold;
+	font-size: 46px;
+}
+h2 {
+	font-size: 28px;
+}
+p {
+	font-size: 15px;
+	color: #222;
+}
+
+header {
+	background-color: rgb(52, 52, 51);
+}
+
+header nav {
+}
+
+header img {
+	padding: 15px 0;
+}
+
+header ul {
+	float: right;
+	margin: 22px 0 0 0;
+	padding: 0 0 10px 0;
+}
+header ul li {
+	display: inline;
+}
+header ul li a {
+	font-family: 'OpenSans Bold', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	color: #FFF;
+	padding: 20px 25px;
+	text-decoration: none;
+	display: inline-block;
+}
+header ul li a:hover {
+	color: rgb(237, 28, 38);
+}
+
+section#info {
+	font-family: 'OpenSans Bold', Helvetica, Arial, "MS Trebuchet", sans-serif;
+	background-color: rgb(192, 52, 40);
+	font-weight: bold;
+	color: #FFF;
+	max-height: 0;
+	-webkit-transition: max-height 2s, height 1s;
+	-webkit-transition-timing-function: ease-in-out;
+	transition: max-height 2s, height 1s;
+	transition-timing-function: ease-in-out;
+}
+
+section#info.active {
+	max-height: 520px;
+}
+
+section#info div#infoWrap  {
+	padding: 40px 0;
+	opacity: 0;
+	display: table;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+section#info div#infoWrap.active {
+	display: block;
+	opacity: 1;
+}
+
+section#info div#infoWrap h1 {
+	line-height: 1.1em;
+	font-size: 64px;
+}
+section#info div#infoWrap ul li {
+	font-size: 28px;
+}
+section#info div#details h1 {
+	color: #FFF;
+	margin: 0 0 45px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+section#info div#details div {
+	font-size: 25px;
+	display: table-cell;
+}
+
+section#info div#details div.detailIcon {
+	float: left;
+	width: 45px;
+	text-align: center;
+}
+
+section#info div#details ul li {
+	padding: 0 0 15px 0;
+}
+section#info div#details ul li i {
+	width: 35px;
+}
+section#info div#register button {
+	margin: 90px 0px;
+	font-size: 42px;
+	white-space: nowrap;
+	width: inherit;
+}
+section#info div#register h1 a {
+	text-decoration: none;
+	color: #FFF;
+	padding: 30px 30px;
+	background-color: rgb(0, 158, 73);
+	border-radius: 4px;
+}
+section#info div#register h1 a:hover {
+	background-color: rgb(0, 170, 73);
+}
+section#info div#register h1 a:active {
+	background-color: rgb(0, 158, 73);
+}
+
+section#prereg {
+	font-family: 'OpenSans Bold', Helvetica, Arial, "MS Trebuchet", sans-serif;
+	background-color: rgb(192, 52, 40);
+	font-weight: bold;
+	color: #FFF;
+	max-height: 0;
+	-webkit-transition: max-height 2s, height 1s;
+	-webkit-transition-timing-function: ease-in-out;
+	transition: max-height 2s, height 1s;
+	transition-timing-function: ease-in-out;
+}
+
+section#prereg.active {
+	max-height: 520px;
+}
+
+section#prereg div#preregWrap  {
+	padding: 40px 0;
+	opacity: 0;
+	display: table;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+section#prereg div#preregWrap.active {
+	display: block;
+	opacity: 1;
+}
+
+section#prereg div#preregWrap div#formWrap h1 {
+	line-height: 1.5em;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+section#prereg div#preregWrap div#formWrap form input[type="text"] {
+	width: 100%;
+	line-height: 2em;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+section#prereg div#preregWrap div#formWrap form input[type="submit"] {
+	width: 100%;
+	font-size: 1.3em;
+}
+
+section#photo {
+	background: url(../assets/empac2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+section#photo h1 {
+	margin: 0 auto;
+}
+section#photo div#boom {
+	padding: 300px 0;
+}
+section#photo div#boom h1 {
+	font-size: 100px;
+	line-height: 1.2em;
+	text-shadow: 10px 5px 20px #111;
+	text-align: center;
+	color: #FFF;
+}
+
+section#faq, section#sponsors {
+	padding: 25px 0;
+}
+section#faq div#faqWrap h1 {
+	margin: 0 0 15px 10px;
+}
+section#faq div#faqWrap h2 {
+	margin: 15px 0 10px 0;
+}
+section#faq div#faqWrap p {
+	line-height: 1.5em;
+}
+
+section#sponsors h1 {
+	margin: 0 0 15px 10px;
+}
+
+section#sponsors h2 {
+	color: rgb(192, 52, 40);
+}
+
+section#sponsors a {
+	text-decoration: underline;
+	color: rgb(192, 52, 40);
+}	
+section#sponsors a img {
+	display: block;
+	margin: 10px auto;
+	padding: 5px 0;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	filter: gray;
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+}
+section#sponsors a:hover img {
+	filter:grayscale(0%);
+	-webkit-filter: grayscale(0%);
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+}
+
+footer {
+	background-color: rgb(52, 52, 51);
+	border-top: 3px solid rgb(192, 52, 40);
+	color: #FFF;
+}
+footer h3 {
+	font-size: 16px;
+	float: left;
+}
+footer div#footerWrap {
+	padding: 40px 0;
+}
+footer ul {
+	text-align: right;
+	white-space: nowrap;
+}
+footer ul li {
+	display: inline;
+	padding: 0 0 0 15px;
+}
+footer ul li a {
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: rgb(192, 52, 40);
+	padding: 10px 20px;
+	border-radius: 4px;
+	color: #FFF;
+}
+footer ul li a#instagram:hover {
+	background-color: rgb(81, 127, 164);
+	-webkit-transition:color 1s ease-out, background .15s ease-in;
+	transition:color 1s ease-out, background .15s ease-in;
+}
+footer ul li a#twitter:hover {
+	background-color: rgb(64,153, 255);
+	-webkit-transition:color 1s ease-out, background .15s ease-in;
+	transition:color 1s ease-out, background .15s ease-in;
+}
+footer ul li a#facebook:hover {
+	background-color: rgb(59, 89, 152);
+	-webkit-transition:color 1s ease-out, background .15s ease-in;
+	transition:color 1s ease-out, background .15s ease-in;
+}
