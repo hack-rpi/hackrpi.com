@@ -1,4 +1,4 @@
-window.onload = function() {	
+$(document).ready(function() {	
 	document.body.setAttribute("class", "loaded");
 	
 	var info = document.getElementById("info");
@@ -86,4 +86,4 @@ window.onload = function() {
 		
 		return false;
 	});
-}
+});
