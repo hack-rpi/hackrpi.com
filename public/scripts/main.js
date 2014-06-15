@@ -9,6 +9,9 @@ window.onload = function() {
 	var preregWrap = document.getElementById("preregWrap");
 	var preregSubmit = document.getElementById("preregSubmit");
 	
+	var preregSuccess = document.getElementById("preregSuccess");
+	var preregSuccessWrap = document.getElementById("preregSuccessWrap");
+	
 	info.addEventListener("transitionend", function(event) {
 		if (info !== event.target) return;
 		if (info.classList.contains("active"))
@@ -32,7 +35,7 @@ window.onload = function() {
 		if (prereg.classList.contains("active"))
 			preregWrap.classList.add("active");
 		else
-			info.classList.add("active");
+			preregSuccess.classList.add("active");
 		
 	}, false);
 	
@@ -42,5 +45,45 @@ window.onload = function() {
 			prereg.classList.remove("active");
 	}, false);
 	
+	preregSuccess.addEventListener("transitionend", function(event) {
+		if (preregSuccess !== event.target) return;
+		if (preregSuccess.classList.contains("active"))
+			preregSuccessWrap.classList.add("active");
+		else
+			info.classList.add("active");
+		
+	}, false);
+	
+	preregSuccessWrap.addEventListener("transitionend", function(event) {
+		if (preregSuccessWrap !== event.target) return;
+		if (!preregSuccessWrap.classList.contains("active"))
+			preregSuccess.classList.remove("active");
+		else
+			setTimeout(function() {
+				preregSuccessWrap.classList.remove("active");
+			}, 3000);
+	}, false);
+	
 	info.classList.add("active");
+	
+	$("#preregForm").submit(function() {
+		$theForm = $(this);
+		
+		$.ajax({
+			type: $theForm.attr("method"),
+			url: $theForm.attr("action"),
+			dataType: "xml",
+			data: $theForm.serialize(),
+			statusCode: {
+				0: function() {
+					$("#preregWrap").removeClass("active");
+				},
+				200: function() {
+					$("#preregWrap").removeClass("active");
+				}
+			}
+		});
+		
+		return false;
+	});
 }

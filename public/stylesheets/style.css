@@ -195,6 +195,40 @@ section#prereg div#preregWrap div#formWrap form input[type="submit"] {
 	font-size: 1.3em;
 }
 
+section#preregSuccess {
+	font-family: 'OpenSans Bold', Helvetica, Arial, "MS Trebuchet", sans-serif;
+	background-color: rgb(192, 52, 40);
+	font-weight: bold;
+	color: #FFF;
+	max-height: 0;
+	-webkit-transition: max-height 2s, height 1s;
+	-webkit-transition-timing-function: ease-in-out;
+	transition: max-height 2s, height 1s;
+	transition-timing-function: ease-in-out;
+}
+
+section#preregSuccess.active {
+	max-height: 520px;
+}
+
+section#preregSuccess div#preregSuccessWrap  {
+	padding: 40px 0;
+	opacity: 0;
+	display: table;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+section#preregSuccess div#preregSuccessWrap.active {
+	display: block;
+	opacity: 1;
+}
+
+section#preregSuccess div#preregSuccessWrap h1 {
+	text-align: center;
+	font-size: 32px;
+}
+
 section#photo {
 	background: url(../assets/empac2.jpg);
 	background-repeat: no-repeat;

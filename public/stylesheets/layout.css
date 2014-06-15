@@ -39,6 +39,9 @@
 		section#prereg div#preregWrap div#formWrap h1 {
 			font-size: 40px !important;
 		}
+		section#preregSuccess div#preregSuccessWrap h1 {
+			font-size: 24px !important;
+		}
 		footer ul li a {
 			font-size: 16px !important;
 		}
