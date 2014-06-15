@@ -64,7 +64,9 @@ $(document).ready(function() {
 			}, 3000);
 	}, false);
 	
-	info.classList.add("active");
+	setTimeout(function() {
+		info.classList.add("active");
+	}, 200);
 	
 	$("#preregForm").submit(function() {
 		$theForm = $(this);
