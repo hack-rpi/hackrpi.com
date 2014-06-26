@@ -73,10 +73,10 @@ section#info {
 	font-weight: bold;
 	color: #FFF;
 	max-height: 0;
-	-webkit-transition: max-height 2s, height 1s;
+	/*-webkit-transition: max-height 1s, height 1s;
 	-webkit-transition-timing-function: ease-in-out;
-	transition: max-height 2s, height 1s;
-	transition-timing-function: ease-in-out;
+	transition: max-height 1s, height 1s;
+	transition-timing-function: ease-in-out;*/
 }
 
 section#info.active {
@@ -153,10 +153,10 @@ section#prereg {
 	font-weight: bold;
 	color: #FFF;
 	max-height: 0;
-	-webkit-transition: max-height 2s, height 1s;
+	/*-webkit-transition: max-height 1s, height 1s;
 	-webkit-transition-timing-function: ease-in-out;
 	transition: max-height 2s, height 1s;
-	transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;*/
 }
 
 section#prereg.active {
@@ -201,10 +201,10 @@ section#preregSuccess {
 	font-weight: bold;
 	color: #FFF;
 	max-height: 0;
-	-webkit-transition: max-height 2s, height 1s;
+	/*-webkit-transition: max-height 1s, height 1s;
 	-webkit-transition-timing-function: ease-in-out;
-	transition: max-height 2s, height 1s;
-	transition-timing-function: ease-in-out;
+	transition: max-height 1s, height 1s;
+	transition-timing-function: ease-in-out;*/
 }
 
 section#preregSuccess.active {
