@@ -13,6 +13,7 @@ $(document).ready(function() {
 	var preregSuccessWrap = document.getElementById("preregSuccessWrap");
 	
 	var hastransitionend = ("ontransitionend" in window);
+	hastransitionend = false;
 	
 	
 	/*info.addEventListener("transitionend", function(event) {
