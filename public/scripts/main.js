@@ -31,6 +31,7 @@ $(document).ready(function() {
 	preregBtn.onclick = function() {
 		infoWrap.classList.remove("active");
 		if (!hastransitionend) {
+			info.classList.remove("active");
 			prereg.classList.add("active");
 			preregWrap.classList.add("active");
 		}
@@ -81,6 +82,7 @@ $(document).ready(function() {
 				0: function() {
 					$("#preregWrap").removeClass("active");
 					if (!hastransitionend) {
+						$("#prereg").removeClass("active");
 						$("#preregSuccess").addClass("active");
 						$("#preregSuccessWrap").addClass("active");
 						setTimeout(function() {
@@ -91,6 +93,7 @@ $(document).ready(function() {
 				200: function() {
 					$("#preregWrap").removeClass("active");
 					if (!hastransitionend) {
+						$("#prereg").removeClass("active");
 						$("#preregSuccess").addClass("active");
 						$("#preregSuccessWrap").addClass("active");
 						setTimeout(function() {
