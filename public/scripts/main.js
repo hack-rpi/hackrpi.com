@@ -20,14 +20,10 @@ $(document).ready(function() {
 			prereg.classList.add("active");
 	}, false);*/
 	
-	infoWrap.addEventListener("transitionend", function(event) {
-		if (infoWrap !== event.target) return;
-		if (!infoWrap.classList.contains("active")) {
-			info.classList.remove("active");
-			prereg.classList.add("active");
-			preregWrap.classList.add("active");
-		}
-	}, false);
+	infoWrap.addEventListener("transitionend", infoWrapTransitionEnd, false);
+	infoWrap.addEventListener("webkitTransitionEnd", infoWrapTransitionEnd, false);
+	infoWrap.addEventListener("oTransitionEnd", infoWrapTransitionEnd, false);
+	infoWrap.addEventListener("otransitionend", infoWrapTransitionEnd, false);
 	
 	preregBtn.onclick = function() {
 		infoWrap.classList.remove("active");
@@ -42,14 +38,10 @@ $(document).ready(function() {
 		
 	}, false);*/
 	
-	preregWrap.addEventListener("transitionend", function(event) {
-		if (preregWrap !== event.target) return;
-		if (!preregWrap.classList.contains("active")) {
-			prereg.classList.remove("active");
-			preregSuccess.classList.add("active");
-			preregSuccessWrap.classList.add("active");
-		}
-	}, false);
+	preregWrap.addEventListener("transitionend", preregWrapTransitionEnd, false);
+	preregWrap.addEventListener("webkitTransitionEnd", preregWrapTransitionEnd, false);
+	preregWrap.addEventListener("oTransitionEnd", preregWrapTransitionEnd, false);
+	preregWrap.addEventListener("otransitionend", preregWrapTransitionEnd, false);
 	
 	/*preregSuccess.addEventListener("transitionend", function(event) {
 		if (preregSuccess !== event.target) return;
@@ -60,18 +52,10 @@ $(document).ready(function() {
 		
 	}, false);*/
 	
-	preregSuccessWrap.addEventListener("transitionend", function(event) {
-		if (preregSuccessWrap !== event.target) return;
-		if (!preregSuccessWrap.classList.contains("active")) {
-			preregSuccess.classList.remove("active");
-			info.classList.add("active");
-			infoWrap.classList.add("active");
-		}
-		else
-			setTimeout(function() {
-				preregSuccessWrap.classList.remove("active");
-			}, 3000);
-	}, false);
+	preregSuccessWrap.addEventListener("transitionend", preregSuccessWrapTransitionEnd, false);
+	preregSuccessWrap.addEventListener("webkitTransitionEnd", preregSuccessWrapTransitionEnd, false);
+	preregSuccessWrap.addEventListener("oTransitionEnd", preregSuccessWrapTransitionEnd, false);
+	preregSuccessWrap.addEventListener("otransitionend", preregSuccessWrapTransitionEnd, false);
 	
 	/*setTimeout(function() {
 		info.classList.add("active");
@@ -99,3 +83,37 @@ $(document).ready(function() {
 		return false;
 	});
 });
+
+function infoWrapTransitionEnd(event) {
+	if (infoWrap !== event.target)
+		return;
+	if (!infoWrap.classList.contains("active")) {
+		info.classList.remove("active");
+		prereg.classList.add("active");
+		preregWrap.classList.add("active");
+	}
+}
+
+function preregWrapTransitionEnd(event) {
+	if (preregWrap !== event.target)
+		return;
+	if (!preregWrap.classList.contains("active")) {
+		prereg.classList.remove("active");
+		preregSuccess.classList.add("active");
+		preregSuccessWrap.classList.add("active");
+	}
+}
+
+function preregSuccessTransitionEnd(event) {
+	if (preregSuccessWrap !== event.target)
+		return;
+	if (!preregSuccessWrap.classList.contains("active")) {
+		preregSuccess.classList.remove("active");
+		info.classList.add("active");
+		infoWrap.classList.add("active");
+	}
+	else
+		setTimeout(function() {
+			preregSuccessWrap.classList.remove("active");
+		}, 3000);
+}
