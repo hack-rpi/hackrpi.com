@@ -42,8 +42,11 @@
 		section#preregSuccess div#preregSuccessWrap h1 {
 			font-size: 24px !important;
 		}
+		footer ul li {
+			/*padding: 0 0 0 5px !important;*/
+		}
 		footer ul li a {
-			font-size: 16px !important;
+			font-size: 14px !important;
 		}
 	}
 
@@ -115,6 +118,9 @@
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
+		header img {
+			width: 100% !important;
+		}
 		section#photo div#boom h1 {
 			font-size: 45px !important;
 		}
