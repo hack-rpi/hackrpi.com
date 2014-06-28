@@ -20,7 +20,7 @@ $(document).ready(function() {
 			prereg.classList.add("active");
 	}, false);*/
 	
-	infoWrap.addEventListener("transitionend", infoWrapTransitionEnd, false);
+	infoWrap.addEventListener("transitionEnd", infoWrapTransitionEnd, false);
 	infoWrap.addEventListener("webkitTransitionEnd", infoWrapTransitionEnd, false);
 	infoWrap.addEventListener("oTransitionEnd", infoWrapTransitionEnd, false);
 	infoWrap.addEventListener("otransitionend", infoWrapTransitionEnd, false);
@@ -38,7 +38,7 @@ $(document).ready(function() {
 		
 	}, false);*/
 	
-	preregWrap.addEventListener("transitionend", preregWrapTransitionEnd, false);
+	preregWrap.addEventListener("transitionEnd", preregWrapTransitionEnd, false);
 	preregWrap.addEventListener("webkitTransitionEnd", preregWrapTransitionEnd, false);
 	preregWrap.addEventListener("oTransitionEnd", preregWrapTransitionEnd, false);
 	preregWrap.addEventListener("otransitionend", preregWrapTransitionEnd, false);
@@ -52,7 +52,7 @@ $(document).ready(function() {
 		
 	}, false);*/
 	
-	preregSuccessWrap.addEventListener("transitionend", preregSuccessWrapTransitionEnd, false);
+	preregSuccessWrap.addEventListener("transitionEnd", preregSuccessWrapTransitionEnd, false);
 	preregSuccessWrap.addEventListener("webkitTransitionEnd", preregSuccessWrapTransitionEnd, false);
 	preregSuccessWrap.addEventListener("oTransitionEnd", preregSuccessWrapTransitionEnd, false);
 	preregSuccessWrap.addEventListener("otransitionend", preregSuccessWrapTransitionEnd, false);
