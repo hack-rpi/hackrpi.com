@@ -87,6 +87,11 @@ $(document).ready(function() {
 						$("#preregSuccessWrap").addClass("active");
 						setTimeout(function() {
 							preregSuccessWrap.classList.remove("active");
+							if (!hastransitionend) {
+								preregSuccess.classList.remove("active");
+								info.classList.add("active");
+								infoWrap.classList.add("active");
+							}
 						}, 3000);
 					}
 				},
@@ -98,6 +103,11 @@ $(document).ready(function() {
 						$("#preregSuccessWrap").addClass("active");
 						setTimeout(function() {
 							preregSuccessWrap.classList.remove("active");
+							if (!hastransitionend) {
+								preregSuccess.classList.remove("active");
+								info.classList.add("active");
+								infoWrap.classList.add("active");
+							}
 						}, 3000);
 					}
 				}
