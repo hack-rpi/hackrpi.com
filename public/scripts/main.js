@@ -104,7 +104,7 @@ function preregWrapTransitionEnd(event) {
 	}
 }
 
-function preregSuccessTransitionEnd(event) {
+function preregSuccessWrapTransitionEnd(event) {
 	if (preregSuccessWrap !== event.target)
 		return;
 	if (!preregSuccessWrap.classList.contains("active")) {
