@@ -67,16 +67,15 @@ max-height:0;
 /*-webkit-transition: max-height 1s, heigh*/
 /*-webkit-transition:max-height 1s, height 1s;
 /*transition-timing-function*/
--webkit-transition-timing-function:ease-in-out;
+/*-webkit-transition-timing-function:ease-in-out;
    -moz-transition-timing-function:ease-in-out;
      -o-transition-timing-function:ease-in-out;
-        transition-timing-function:ease-in-out;
+        transition-timing-function:ease-in-out;*/
 /*transition*/
--webkit-transition:max-height 1s, height 1s;
+/*-webkit-transition:max-height 1s, height 1s;
    -moz-transition:max-height 1s, height 1s;
      -o-transition:max-height 1s, height 1s;
-        transition:max-height 1s, height 1s;
-:/;
+        transition:max-height 1s, height 1s;*/
 }
 section#info.active{
 max-height:520px;
@@ -154,16 +153,15 @@ max-height:0;
 /*-webkit-transition: max-height 1s, heigh*/
 /*-webkit-transition:max-height 1s, height 1s;
 /*transition-timing-function*/
--webkit-transition-timing-function:ease-in-out;
+/*-webkit-transition-timing-function:ease-in-out;
    -moz-transition-timing-function:ease-in-out;
      -o-transition-timing-function:ease-in-out;
-        transition-timing-function:ease-in-out;
+        transition-timing-function:ease-in-out;*/
 /*transition*/
--webkit-transition:max-height 2s, height 1s;
+/*-webkit-transition:max-height 2s, height 1s;
    -moz-transition:max-height 2s, height 1s;
      -o-transition:max-height 2s, height 1s;
-        transition:max-height 2s, height 1s;
-:/;
+        transition:max-height 2s, height 1s;*/
 }
 section#prereg.active{
 max-height:520px;
@@ -207,16 +205,15 @@ max-height:0;
 /*-webkit-transition: max-height 1s, heigh*/
 /*-webkit-transition:max-height 1s, height 1s;
 /*transition-timing-function*/
--webkit-transition-timing-function:ease-in-out;
+/*-webkit-transition-timing-function:ease-in-out;
    -moz-transition-timing-function:ease-in-out;
      -o-transition-timing-function:ease-in-out;
-        transition-timing-function:ease-in-out;
+        transition-timing-function:ease-in-out;*/
 /*transition*/
--webkit-transition:max-height 1s, height 1s;
+/*-webkit-transition:max-height 1s, height 1s;
    -moz-transition:max-height 1s, height 1s;
      -o-transition:max-height 1s, height 1s;
-        transition:max-height 1s, height 1s;
-:/;
+        transition:max-height 1s, height 1s;*/
 }
 section#preregSuccess.active{
 max-height:520px;

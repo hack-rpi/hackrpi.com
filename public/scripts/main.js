@@ -12,6 +12,9 @@ $(document).ready(function() {
 	var preregSuccess = document.getElementById("preregSuccess");
 	var preregSuccessWrap = document.getElementById("preregSuccessWrap");
 	
+	var hastransitionend = ("ontransitionend" in window);
+	
+	
 	/*info.addEventListener("transitionend", function(event) {
 		if (info !== event.target) return;
 		if (info.classList.contains("active"))
@@ -27,6 +30,10 @@ $(document).ready(function() {
 	
 	preregBtn.onclick = function() {
 		infoWrap.classList.remove("active");
+		if (!hastransitionend) {
+			prereg.classList.add("active");
+			preregWrap.classList.add("active");
+		}
 	}
 	
 	/*prereg.addEventListener("transitionend", function(event) {
@@ -73,9 +80,23 @@ $(document).ready(function() {
 			statusCode: {
 				0: function() {
 					$("#preregWrap").removeClass("active");
+					if (!hastransitionend) {
+						$("#preregSuccess").addClass("active");
+						$("#preregSuccessWrap").addClass("active");
+						setTimeout(function() {
+							preregSuccessWrap.classList.remove("active");
+						}, 3000);
+					}
 				},
 				200: function() {
 					$("#preregWrap").removeClass("active");
+					if (!hastransitionend) {
+						$("#preregSuccess").addClass("active");
+						$("#preregSuccessWrap").addClass("active");
+						setTimeout(function() {
+							preregSuccessWrap.classList.remove("active");
+						}, 3000);
+					}
 				}
 			}
 		});
