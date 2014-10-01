@@ -309,13 +309,16 @@ filter:grayscale(0%);
 filter:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
 }
 section#sponsors .tier-3 a img{
-height: 84px !important;
+height: 80px !important;
 }
 section#sponsors .tier-2 a img{
 height: 64px !important;
 }
 section#sponsors .tier-1 a img{
 height: 48px !important;
+}
+section#partners h1{
+margin:0 0 15px 10px;
 }
 section#partners a img{
 display:block;
