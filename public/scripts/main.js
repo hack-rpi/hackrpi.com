@@ -30,12 +30,13 @@ $(document).ready(function() {
 	infoWrap.addEventListener("otransitionend", infoWrapTransitionEnd, false);
 	
 	preregBtn.onclick = function() {
-		infoWrap.classList.remove("active");
+		window.location.href='/register';
+		/*infoWrap.classList.remove("active");
 		if (!hastransitionend) {
 			info.classList.remove("active");
 			prereg.classList.add("active");
 			preregWrap.classList.add("active");
-		}
+		}*/
 	}
 	
 	/*prereg.addEventListener("transitionend", function(event) {
