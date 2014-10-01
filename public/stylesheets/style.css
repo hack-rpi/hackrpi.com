@@ -236,6 +236,19 @@ section#preregSuccess div#preregSuccessWrap h1{
 text-align:center;
 font-size:32px;
 }
+section#title{
+font-family:'OpenSans Bold', Helvetica, Arial, "MS Trebuchet", sans-serif;
+background-color:rgb(192, 52, 40);
+font-weight:bold;
+color:#FFF;
+}
+section#title div#titleWrap{
+padding: 40px 0;
+}
+section#title div#titleWrap h1{
+text-align: center;
+font-size: 40px;
+}
 section#photo{
 background:url(../assets/empac_mini.jpg);
 background-repeat:no-repeat;
