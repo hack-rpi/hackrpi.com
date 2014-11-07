@@ -397,3 +397,32 @@ background-color:rgb(59, 89, 152);
      -o-transition:color 1s ease-out, background .15s ease-in;
         transition:color 1s ease-out, background .15s ease-in;
 }
+/* Schedule Page */
+#schedule {
+	padding: 3em 0;
+}
+#schedule h1 {
+	color: rgb(192, 52, 40);
+}
+#schedule h2 {
+	padding: 0.5em 0;
+}
+#schedule table {
+	font-size: 1.25em;
+}
+#schedule table td {
+	padding: 0.5em 1.25em;
+	line-height: 1.5em;
+}
+#schedule table tr:nth-child(odd) {
+	background-color: #f9e3d7;
+}
+#schedule table tr:nth-child(even) {
+	background-color: #e0dcda;
+}
+#schedule table tr td:first-child {
+	width: 100%;
+	display: block;
+	padding-left: 0.5em;
+	padding-right: 1.5em;
+}
