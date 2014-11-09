@@ -427,7 +427,6 @@ background-color:rgb(59, 89, 152);
 	padding-right: 1.5em;
 }
 /* Map Page */
-
 section#map iframe {
 	width: 100%;
 	height: 640px;
@@ -441,4 +440,14 @@ section#map p {
 }
 section#map img {
 	width: 100%;
+}
+/* Prizes Page */
+section#prizes div {
+	padding: 1em 0;
+}
+section#prizes h1, section#prizes h2 {
+	margin-bottom: 0.25em;
+}
+section#prizes ul {
+	margin: 0.5em 0;
 }
