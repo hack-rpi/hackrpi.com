@@ -439,3 +439,6 @@ section#map p {
 	margin: 1em 0;
 	line-height: 1.5em;
 }
+section#map img {
+	width: 100%;
+}
