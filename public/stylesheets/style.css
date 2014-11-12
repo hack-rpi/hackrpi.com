@@ -36,12 +36,14 @@ background-color:rgb(52, 52, 51);
 header nav{
 }
 header img{
-padding:15px 0;
+display: block;
+margin: 0 auto;
+padding: 1em 0 0;
 }
 header ul{
-float:right;
-margin:22px 0 0 0;
-padding:0 0 10px 0;
+margin: 0 auto;
+text-align: center;
+padding: 1em 0;
 }
 header ul li{
 display:inline;
@@ -51,7 +53,7 @@ font-family:'OpenSans Bold', Helvetica, Arial, sans-serif;
 font-weight:bold;
 font-size:24px;
 color:#FFF;
-padding:20px 25px;
+padding: 1em;
 text-decoration:none;
 display:inline-block;
 }
