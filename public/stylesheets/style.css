@@ -443,6 +443,13 @@ section#map p {
 section#map img {
 	width: 100%;
 }
+section#map div.map_floor {
+	margin: 1em 0;
+}
+section#map div.map_floor h2 {
+	margin: 0 0 0.5em 0;
+	text-align: center;
+}
 /* Prizes Page */
 section#prizes div {
 	padding: 1em 0;

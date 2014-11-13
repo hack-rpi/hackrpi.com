@@ -30,10 +30,14 @@
 <body>
 
 <header>
-	<nav class="container">
-		<a href="index.html" class="six columns"><img src="assets/logo.png" alt="HackRPI" class=""/></a>
+	<nav class="container sixteen columns">
+		<div id="logo">
+			<a href="index.html"><img src="assets/logo.png" alt="HackRPI" class=""/></a>
+		</div>
 		<ul id="menu" class="">
 			<li><a data-scroll href="register.html">Register</a></li>
+			<li><a data-scroll href="map.html">Map</a></li>
+			<li><a data-scroll href="schedule.html">Schedule</a></li>
 			<li><a data-scroll href="index.html#faq">FAQ</a></li>
 			<li><a data-scroll href="index.html#sponsors">Sponsors</a></li>
 			<!--<li><a data-scroll href="#partners">Partners</a></li>-->
@@ -48,16 +52,28 @@
 		<iframe src="https://mapsengine.google.com/map/embed?mid=z-5kJJcWAkes.kXzJvlnXHlJk"></iframe>
 	</div>
 	<div class="sixteen columns">
-		<img src="images/cii-4-final.png">
-		<img src="images/darrin-2-final-public.png">
-		<img src="images/darrin-3-final.png">
+		<div class="map_floor">
+			<h2>Venue 2nd Floor</h2>
+			<img src="images/darrin-2-final-public.png">
+			<img src="images/keylegend.png">
+		</div>
+		<div class="map_floor">
+			<h2>Venue 3rd Floor</h2>
+			<img src="images/darrin-3-final.png">
+			<img src="images/keylegend.png">
+		</div>
+		<div class="map_floor">
+			<h2>Venue 4th Floor</h2>
+			<img src="images/cii-4-final.png">
+			<img src="images/keylegend.png">
+		</div>
 	</div>
 </section>
 
 <footer>
 	<div id="footerWrap" class="container">
 		<a href="ee" style="text-decoration: none; color:inherit;"><h3>&copy; 2014 Rensselaer Hackathon Organization</h3></a>
-		<ul class="">
+		<ul>
 			<li><a href="https://instagram.com/goHackRPI" target="_BLANK" id="instagram"><i class="fa fa-instagram"></i> @goHackRPI</a></li>
 			<li><a href="https://twitter.com/goHackRPI" target="_BLANK" id="twitter"><i class="fa fa-twitter"></i> @goHackRPI</a></li>
 			<li><a href="https://www.facebook.com/hackrpi" target="_BLANK" id="facebook"><i class="fa fa-facebook-square"></i> HackRPI</a></li>
