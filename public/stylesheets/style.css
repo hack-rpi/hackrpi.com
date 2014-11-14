@@ -470,3 +470,32 @@ section#prizes p, section#prizes li {
 section#prizes p, section#prizes li {
 	padding: 0.25em 0;
 }
+/* Registration is now closed. */
+ul#menu li a#register {
+	color: #999 !important;
+}
+ul#menu li a#register {
+	display: inline;
+	position: relative;
+}
+ul#menu li a#register:hover {
+	cursor: default;
+}
+ul#menu li a#register:hover:after {
+	background: #444;
+	border-radius: 5px;
+	color: #FFF;
+	content: attr(title);
+	padding: 0.5em 1em;
+	position: absolute;
+	left: -1em;
+	top: 3em;
+	z-index: 100;
+}
+@media only screen and (max-width: 767px) {
+	ul#menu li a#register:hover:after {
+		position: absolute;
+		left: -2.25em;
+		top: 2.25em;
+	}
+}
