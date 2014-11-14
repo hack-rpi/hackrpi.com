@@ -18,13 +18,17 @@ body{
 font-family:"HelveticaNeue", "Helvetica Neue", "Helvetica", Arial, "MS Trebuchet", sans-serif;
 width:100%;
 }
-h1, h2{
+h1, h2, h3{
 font-family:'OpenSans Bold', Helvetica, Arial, "MS Trebuchet", sans-serif;
 font-weight:bold;
 font-size:46px;
+line-height: 1.25em;
 }
 h2{
 font-size:28px;
+}
+h3{
+font-size: 18px;
 }
 p{
 font-size:15px;
@@ -53,7 +57,7 @@ font-family:'OpenSans Bold', Helvetica, Arial, sans-serif;
 font-weight:bold;
 font-size:24px;
 color:#FFF;
-padding: 1em;
+padding: 1em 0.75em;
 text-decoration:none;
 display:inline-block;
 }
