@@ -460,3 +460,13 @@ section#prizes h1, section#prizes h2 {
 section#prizes ul {
 	margin: 0.5em 0;
 }
+section#prizes h1, section#prizes h2 {
+	margin: 0.5em 0;
+}
+section#prizes p, section#prizes li {
+	font-size: 16px;
+	line-height: 1.5em;
+}
+section#prizes p, section#prizes li {
+	padding: 0.25em 0;
+}
