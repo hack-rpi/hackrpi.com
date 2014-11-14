@@ -109,6 +109,9 @@ margin:0 0 45px 0;
 text-align:center;
 text-transform:uppercase;
 }
+div#details div#time {
+margin: 0.5em 0;
+}
 section#info div#details div{
 font-size:25px;
 display:table-cell;
