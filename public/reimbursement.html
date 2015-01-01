@@ -99,14 +99,22 @@
 		<div id="registerWrap" class="container">
 			<div id="formWrap" class="sixteen columns">
 				<form class="jotform-form" action="http://submit.jotformpro.com/submit/43247142479963/" method="post" enctype="multipart/form-data" name="form_43247142479963" id="43247142479963" accept-charset="utf-8">
-				  <input type="hidden" name="formID" value="43247142479963" />
-				  <div class="form-all">
+					<input type="hidden" name="formID" value="43247142479963" />
+					<div class="form-all">
 					<ul class="form-section">
+					  <li id="cid_3" class="form-input-wide" data-type="control_head">
+						<div class="form-header-group">
+						  <div class="header-text httal htvam">
+							<h2 id="header_3" class="form-header">
+							  Travel Reimbursement
+							</h2>
+						  </div>
+						</div>
+					  </li>
 					  <li class="form-line" data-type="control_text" id="id_6">
 						<div id="cid_6" class="form-input-wide">
 						  <div id="text_6" class="form-html">
 							<p>A portion of your travel costs are covered by HackRPI. Please photograph or scan your receipts and upload them on this form to receive reimbursement.</p>
-							<br>
 							<p><strong>Note:</strong> Filling out this form only entitles you to a reimbursement if you were promised a reimbursement earlier via email or personally by one of the main organizers.</p>
 						  </div>
 						</div>
@@ -131,34 +139,6 @@
 						</label>
 						<div id="cid_5" class="form-input jf-required">
 						  <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_5" name="q5_email" size="20" value="" />
-						</div>
-					  </li>
-					  <li class="form-line jf-required" data-type="control_fileupload" id="id_1">
-						<label class="form-label form-label-left form-label-auto" id="label_1" for="input_1">
-						  Upload your travel receipts
-						  <span class="form-required">
-							*
-						  </span>
-						</label>
-						<div id="cid_1" class="form-input jf-required">
-						  <span class="form-sub-label-container">
-							<div class="qq-uploader-buttonText-value">
-							  Upload
-							</div>
-							<input class="form-upload-multiple validate[required]" type="file" id="input_1" name="q1_clickTo[]" multiple="multiple" file-accept="pdf, doc, docx, xls, xlsx, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif" file-maxsize="2048" file-minsize="0" file-limit="5" />
-							<label class="form-sub-label" for="input_1"> Max 5 files, 2MB each. </label>
-						  </span>
-						</div>
-					  </li>
-					  <li class="form-line jf-required" data-type="control_textbox" id="id_7">
-						<label class="form-label form-label-left form-label-auto" id="label_7" for="input_7">
-						  Total travel cost
-						  <span class="form-required">
-							*
-						  </span>
-						</label>
-						<div id="cid_7" class="form-input jf-required">
-						  <input type="text" class=" form-textbox validate[required, currency]" data-type="input-textbox" id="input_7" name="q7_totalTravel" size="20" value="" />
 						</div>
 					  </li>
 					  <li class="form-line jf-required" data-type="control_radio" id="id_9">
@@ -296,6 +276,34 @@
 						  <div id="text_17" class="form-html">
 							<p>We need all of this information for our school to process the payment. This will only be seen by the account manager of RPI, and will not be available to anybody else. Once the Payment is processed, all information will be deleted.</p>
 						  </div>
+						</div>
+					  </li>
+					  <li class="form-line jf-required" data-type="control_fileupload" id="id_1">
+						<label class="form-label form-label-left form-label-auto" id="label_1" for="input_1">
+						  Upload your travel receipts
+						  <span class="form-required">
+							*
+						  </span>
+						</label>
+						<div id="cid_1" class="form-input jf-required">
+						  <span class="form-sub-label-container">
+							<div class="qq-uploader-buttonText-value">
+							  Upload
+							</div>
+							<input class="form-upload-multiple validate[required]" type="file" id="input_1" name="q1_clickTo[]" multiple="multiple" file-accept="pdf, doc, docx, xls, xlsx, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif" file-maxsize="2048" file-minsize="0" file-limit="5" />
+							<label class="form-sub-label" for="input_1"> Max 5 files, 2MB each. </label>
+						  </span>
+						</div>
+					  </li>
+					  <li class="form-line jf-required" data-type="control_textbox" id="id_7">
+						<label class="form-label form-label-left form-label-auto" id="label_7" for="input_7">
+						  Total travel cost
+						  <span class="form-required">
+							*
+						  </span>
+						</label>
+						<div id="cid_7" class="form-input jf-required">
+						  <input type="text" class=" form-textbox validate[required, Currency]" data-type="input-textbox" id="input_7" name="q7_totalTravel" size="20" value="" />
 						</div>
 					  </li>
 					  <li class="form-line jf-required" data-type="control_radio" id="id_19">
@@ -456,7 +464,7 @@
 					  </li>
 					  <li class="form-line" data-type="control_button" id="id_2">
 						<div id="cid_2" class="form-input-wide">
-						  <div class="form-buttons-wrapper">
+						  <div style="margin-left:156px" class="form-buttons-wrapper">
 							<button id="input_2" type="submit" class="form-submit-button">
 							  Submit
 							</button>
@@ -468,11 +476,11 @@
 						<input type="text" name="website" value="" />
 					  </li>
 					</ul>
-				  </div>
-				  <input type="hidden" id="simple_spc" name="simple_spc" value="43247142479963" />
-				  <script type="text/javascript">
-				  document.getElementById("si" + "mple" + "_spc").value = "43247142479963-43247142479963";
-				  </script>
+					</div>
+					<input type="hidden" id="simple_spc" name="simple_spc" value="43247142479963" />
+					<script type="text/javascript">
+					document.getElementById("si" + "mple" + "_spc").value = "43247142479963-43247142479963";
+					</script>
 				</form>
 			</div>
 		</div>
