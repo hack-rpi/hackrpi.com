@@ -65,7 +65,9 @@
 		section#info div#infoWrap h1 {
 			font-size: 42px !important;
 		}
-		
+		section#sponsors dev#sWrap h3 {
+            font-size: 20px !important;
+        }
         footer {
             position: inherit !important;
         }
@@ -73,7 +75,6 @@
 			float: none !important;
 			text-align: center;
 		}
-		
 		footer ul {
 			text-align: none;
 			clear: both;

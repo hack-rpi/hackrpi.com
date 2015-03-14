@@ -1,6 +1,6 @@
 
 use Rack::Static, 
-  :urls => ["/fonts", "/scripts", "/stylesheets", "2014/assets", "2014/font-awesome-4.0.3", "2014/fonts", "2014/scripts", "2014/stylesheets", "2014/images"],
+  :urls => ["/assets", "/fonts", "/scripts", "/stylesheets", "/2014/assets", "/2014/font-awesome-4.0.3", "/2014/fonts", "/2014/scripts", "/2014/stylesheets", "/2014/images"],
   :root => "public"
 
 map "/" do
