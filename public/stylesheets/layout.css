@@ -22,78 +22,75 @@
 
 /* #Media Queries
 ================================================== */
+	@media only screen and (min-aspect-ratio: 3/2) {
+		body {
+		  background-size:100% auto;
+		}
+	}
+
+	@media only screen and (max-aspect-ratio: 3/2) {
+		body {
+		  background-size:auto 100%;
+		}
+	}
+
+	/* Standard 960 and greater (devices and browsers) */
+	@media only screen and (min-width: 960px) {
+		div#wrapper {
+		  background-color:rgba(20,20,20,0.5);
+		}		
+		div#info {
+		  float:left; 
+		  max-height:68vh;
+		  margin:10vh auto;
+		  overflow:hidden;
+		  width:100%;
+		}
+		div#logo {
+		  float:left;
+		  padding-left:5%;
+		  width:50%;
+		}
+		div#prereg-form {
+		  border-radius:30px;
+		  float:left;  
+		  height:96%;
+		  margin:0 4% 0 2%;
+		  padding:3%;
+		  width:33%;
+		}	
+	}
 
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {
-		
+		div#wrapper {
+		  background-color:rgba(20,20,20,0.7);
+		}
+	}
+
+	/* Tablet Portrait and greater (devices and browsers)*/
+	@media only screen and (min-width: 768px) {
 	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
-		section#info div#infoWrap div#details h1 {
-			font-size: 60px !important;
-		}
-		footer ul li {
-			/*padding: 0 0 0 5px !important;*/
-		}
-		footer ul li a {
-			font-size: 14px !important;
-		}
 	}
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
-		header img {
-			margin: 0 auto !important;
-			display: block;
-            float: none !important;
-		}
-		header ul {
-			clear: both;
-			float: none !important;
-			text-align: center;
-		}
-		header ul li {
-			display: block !important;
-			margin: 10px 0;
-		}
-		header ul li a {
-			display: block;
-			padding: 10px 0 !important;
-		}
-		
-		section#info div#infoWrap h1 {
-			font-size: 42px !important;
-		}
-		
-        footer {
-            position: inherit !important;
-        }
-		footer h3 {
-			float: none !important;
-			text-align: center;
-		}
-		
-		footer ul {
-			text-align: none;
-			clear: both;
-			padding: 10px 0 0 ;
-		}
-		footer ul li a {
-			display: block;
-			text-align: center;
-		}
+
 	}
 
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {
+	/* Mobile Landscape Size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 959px) {
+		div#info {
+			margin:0 auto;
+			width:80%;
+		}
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
-		header img {
-			width: 100% !important;
-		}
 	}
 
 

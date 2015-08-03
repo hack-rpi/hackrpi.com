@@ -28,34 +28,48 @@
 	<meta property="og:description" content="Rensselaer Polytechnic Institute's first Major League Hacking hackathon. Register now!" />
 </head>
 <body>
-
-<header>
-	<nav class="container sixteen columns">
+<div id="wrapper">
+	<header>
+		<nav>
+			<ul id="menu">
+			<!--
+				<li><a href="#">Register</a>
+				<li><a href="#">FAQ</a>
+				<li><a href="#">Sponsors</a>
+			-->
+			</ul>
+		</nav>
+	</header>
+	<div id="info">
 		<div id="logo">
-			<a href="index.html"><img src="assets/logo.png" alt="HackRPI" class=""/></a>
+			<img src="assets/logo.png"/>
+			<table id="details">
+				<tr>
+					<td class="detailIcon"><i class="fa fa-clock-o"></i></td>
+					<td class="detailText">Saturday, <strong>November 14th</strong> - Sunday, November 15th</td>
+				</tr>
+				<tr>
+					<td class="detailIcon"><i class="fa fa-map-marker"></i></td>
+					<td class="detailText"><strong>Rensselaer Polytechnic Institute</strong> Troy, NY</td>
+				</tr>
+			</table>
 		</div>
-		<ul id="menu">
-			<li><a href="2014" id="2014site">2014 Website</a></li>
-		</ul>
-	</nav>
-</header>
-
-<section id="info">
-	<div id="infoWrap" class="container">
-		<div id="details" class="sixteen columns">
-			<h1>HackRPI 2015<br>Coming Soon!</h1>
+		<div id="prereg-form">
+			<h2>Receive notifications when 2015 registration opens!</h2>
+			<form action="https://docs.google.com/forms/d/1JtYCqerayEgErLVsyUriRHkj05258dLwBhZ7ZlS-5QY/formResponse" method="POST" id="preregForm">
+				<input class="field" type="text" name="entry.287570484" placeholder="Name">
+				<input class="field" type="text" name="entry.1575150727" placeholder="E-Mail">
+				<input class="field" type="text" name="entry.147938571" placeholder="School">
+				<input type="hidden" name="submit" value="Submit">
+				<input class="button" type="submit" name="submitPrereg" value="Submit" id="preregSubmit">
+			</form>
+			<p id="prereg-success">
+			  Awesome! We'll send you an e-mail when registration is up.
+			</p>
 		</div>
 	</div>
-</section>
-
-<section id="sponsors">
-    <div id="sWrap" class="container">
-        <div id="sponsorContainer" class="sixteen columns">
-            <h3>If you are interested in sponsorship, please contact us at <a href="mailto:goHackRPI@gmail.com">goHackRPI@gmail.com</a></h3>
-        </div>
-    </div>
-</section>
-
+</div>
+<!--
 <footer>
 	<div id="footerWrap" class="container">
 		<h3>&copy; 2014 Rensselaer Hackathon Organization</h3>
@@ -66,7 +80,7 @@
 		</ul>
 	</div>
 </footer>
-
+-->
 <script>smoothScroll.init();</script>
 
 </body>
