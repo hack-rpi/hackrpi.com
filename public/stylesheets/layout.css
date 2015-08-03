@@ -78,7 +78,47 @@
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
-
+		header img {
+			margin: 0 auto !important;
+			display: block;
+            float: none !important;
+		}
+		header ul {
+			clear: both;
+			float: none !important;
+			text-align: center;
+		}
+		header ul li {
+			display: block !important;
+			margin: 10px 0;
+		}
+		header ul li a {
+			display: block;
+			padding: 10px 0 !important;
+		}
+		
+		section#info div#infoWrap h1 {
+			font-size: 42px !important;
+		}
+		section#sponsors dev#sWrap h3 {
+            font-size: 20px !important;
+        }
+        footer {
+            position: inherit !important;
+        }
+		footer h3 {
+			float: none !important;
+			text-align: center;
+		}
+		footer ul {
+			text-align: none;
+			clear: both;
+			padding: 10px 0 0 ;
+		}
+		footer ul li a {
+			display: block;
+			text-align: center;
+		}
 	}
 
 	/* Mobile Landscape Size to standard 960 (devices and browsers) */
