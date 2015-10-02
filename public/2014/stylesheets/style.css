@@ -510,3 +510,9 @@ ul#menu li a#register:hover:after {
 		top: 2.25em;
 	}
 }
+h2#code-of-conduct {
+  text-align: center;
+}
+h2#code-of-conduct a {
+  color:rgb(192, 52, 40);
+}
