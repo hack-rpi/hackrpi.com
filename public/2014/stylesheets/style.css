@@ -135,7 +135,7 @@ section#info div#register button{
 margin:90px 0px;
 font-size:42px;
 white-space:nowrap;
-width:inherit;
+width:100%;
 }
 section#info div#register h1 a{
 text-decoration:none;
