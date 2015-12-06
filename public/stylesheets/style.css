@@ -224,3 +224,21 @@ background-color:rgb(59, 89, 152);
      -o-transition:color 1s ease-out, background .15s ease-in;
         transition:color 1s ease-out, background .15s ease-in;
 }
+span.winner_project {
+	font-weight: bold;
+	font-size: 1.5em;
+	color: rgb(192, 52, 40);
+}
+
+span.prize-text {
+	font-weight: lighter;
+	font-size: 0.8em;
+}
+
+section#prizes ul.winners-list {
+	margin: 1em;
+}
+
+section#prizes ul.winners-list li {
+	line-height: 1em;
+}
