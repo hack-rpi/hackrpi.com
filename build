@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+mkdir -p ./public/lib/velocity
+curl -o ./public/lib/velocity/velocity.min.js https://raw.githubusercontent.com/julianshapiro/velocity/master/velocity.min.js
+
+mkdir -p ./public/lib/jquery
+curl -o ./public/lib/jquery/jquery.min.js http://code.jquery.com/jquery-1.12.1.min.js
+
+curl -L -o ./public/lib/skeleton.zip https://github.com/dhg/Skeleton/releases/download/2.0.4/Skeleton-2.0.4.zip
+unzip ./public/lib/skeleton.zip -d ./public/lib
+mv -f ./public/lib/Skeleton-2.0.4 ./public/lib/skeleton
+rm -rf ./public/lib/skeleton.zip
+
+mkdir -p ./public/lib/smooth-scroll
+curl -o ./public/lib/smooth-scroll/smooth-scroll.min.js https://raw.githubusercontent.com/cferdinandi/smooth-scroll/master/dist/js/smooth-scroll.min.js
+
+curl -o ./public/lib/font-awesome.zip https://fortawesome.github.io/Font-Awesome/assets/font-awesome-4.5.0.zip
+unzip ./public/lib/font-awesome.zip -d ./public/lib
+mv -f ./public/lib/font-awesome-4.5.0 ./public/lib/font-awesome
+rm -rf ./public/lib/font-awesome.zip

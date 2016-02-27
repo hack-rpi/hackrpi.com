@@ -1,0 +1,251 @@
+@font-face {
+  font-family: 'CrimsonText Roman';
+  src: url('../fonts/CrimsonText-Roman.ttf');
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('/lib/font-awesome/fonts/fontawesome-webfont.ttf');
+}
+body {
+  background-attachment: fixed;
+  background-image: url(../assets/empac_mini.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica", Arial, "MS Trebuchet", sans-serif;
+  width: 100%;
+}
+h1,
+h2,
+h3 {
+  font-family: 'OpenSans Bold', Helvetica, Arial, "MS Trebuchet", sans-serif;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 1.25em;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 18px;
+}
+p {
+  font-size: 15px;
+  color: #222;
+}
+div#wrapper {
+  height: 100vh;
+  width: 100%;
+  /*background: url(../assets/troy_sunset.jpg) no-repeat center center fixed;*/
+  background-size: cover;
+}
+header {
+  width: 100%;
+  background-color: #343433;
+  padding: 5px 0;
+}
+header nav {
+  height: 50%;
+  margin: 0 auto;
+  position: relative;
+  top: 5vh;
+  width: 75%;
+}
+nav ul {
+  display: inline;
+  float: right;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a,
+nav ul li a:hover {
+  -webkit-transition: color 0.2s, font-size 0.4s;
+  -moz-transition: color 0.2s, font-size 0.4s;
+  -o-transition: color 0.2s, font-size 0.4s;
+  transition: color 0.2s, font-size 0.4s;
+}
+nav ul li a {
+  font-family: 'OpenSans Regular', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #eee;
+  padding: 0 0.75em;
+  text-decoration: none;
+  display: inline-block;
+}
+nav ul li a:hover {
+  color: #fff;
+  font-weight: bold;
+}
+div#logo img {
+  width: 100%;
+}
+div#info {
+  text-align: center;
+  background-color: #c03428;
+  padding: 10px 0;
+}
+span.detailIcon {
+  color: #962020;
+  font-size: 28px;
+  padding-right: 10px;
+  text-align: center;
+}
+span.detailText {
+  color: #eee;
+  font-family: 'OpenSans Regular', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+}
+.content {
+  position: relative;
+  top: 300px;
+  height: 300px;
+  width: 100%;
+}
+.content #splash {
+  font-size: 64px;
+  font-weight: bold;
+  position: absolute;
+}
+div#prereg-form {
+  background-color: rgba(192, 52, 40, 0.75);
+  padding: 3%;
+}
+div#prereg-form h2 {
+  color: #eee;
+  font-family: 'OpenSans Regular', Helvetica, Arial, sans-serif;
+  text-align: left;
+}
+div#prereg-form form {
+  margin: 0;
+  width: 100%;
+}
+div#prereg-form form input.field {
+  border: none;
+  padding-right: 1%;
+  margin: 20px 0;
+  width: 98%;
+  -webkit-box-shadow: inset 0 0 5px #333;
+  -moz-box-shadow: inset 0 0 5px #333;
+  box-shadow: inset 0 0 5px #333;
+}
+div#prereg-form form input.field:focus {
+  -webkit-box-shadow: inset 0 0 10px #000;
+  -moz-box-shadow: inset 0 0 10px #000;
+  box-shadow: inset 0 0 10px #000;
+}
+div#prereg-form form input.button {
+  background: transparent;
+  border: 2px rgba(200, 200, 200, 0.7) solid;
+  border-radius: 5px;
+  color: #ddd;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 2% 5%;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+div#prereg-form form input.button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+p#prereg-success {
+  display: none;
+  color: #ddd;
+  margin: 30px 0;
+  font-family: 'OpenSans-Regular', Helvetica, Arial, sans-serif;
+  font-size: 26px;
+}
+section#sponsors {
+  font-family: 'OpenSans Bold', Helvetica, Arial, "MS Trebuchet", sans-serif;
+  background-color: #ffffff;
+}
+section#sponsors div#sWrap {
+  padding: 174px 0;
+  display: block;
+}
+section#sponsors div#sWrap h3 {
+  font-size: 40px;
+  color: #000;
+  text-align: center;
+}
+section#sponsors div#sWrap a {
+  text-decoration: none;
+  color: #c03428;
+}
+/* FOOTER */
+footer {
+  background-color: #343433;
+  border-top: 3px solid #c03428;
+  color: #FFF;
+  width: 100%;
+}
+footer h3 {
+  font-size: 16px;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+footer div#footerWrap {
+  padding: 40px 0;
+}
+footer .social-media {
+  width: 100%;
+  margin-top: 20px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .social-media a {
+  flex: auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #c03428;
+  padding: 10px;
+  margin: 5px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #FFF;
+}
+footer .social-media a:hover {
+  background-color: #4078c0;
+}
+@media only screen and (max-width: 480px) {
+  footer .social-media a {
+    flex-basis: 100%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 960px) {
+  footer .social-media a {
+    flex-basis: 40%;
+  }
+}
+@media only screen and (min-width: 960px) {
+  footer .social-media a {
+    flex-basis: 20%;
+  }
+}
+footer .previous-years {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+footer .previous-years a {
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 0 10px;
+  color: #ababab;
+}
+footer .previous-years a:hover {
+  color: #FFF;
+  font-weight: bold;
+}
