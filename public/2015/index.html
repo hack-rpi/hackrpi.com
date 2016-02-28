@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -6,73 +7,300 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>HackRPI 2015 - Coming Soon</title>
+	<title>HackRPI 2015</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="assets/favicon.ico" >
+    <link rel="shortcut icon" href="/common/favicon.ico" >
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/style.css">
-	<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
-	
-	<script src="scripts/smooth-scroll.js"></script>
-	<script src="scripts/jquery-2.1.0.min.js"></script>
+	<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+	<script src="/lib/smooth-scroll/smooth-scroll.min.js"></script>
+	<script src="/lib/jquery/jquery.min.js"></script>
 	<script src="scripts/main.js"></script>
 	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 	<meta property="og:image" content="http://www.hackrpi.com/assets/ext-hackrpi-logo.png" />
 	<meta property="og:title" content="HackRPI" />
-	<meta property="og:description" content="Rensselaer Polytechnic Institute's first Major League Hacking hackathon. Register now!" />
+	<meta property="og:description" content="Rensselaer Polytechnic Institute's Major League Hacking hackathon. Register now!" />
 </head>
 <body>
-<div id="wrapper">
-	<header>
-		<nav>
-			<ul id="menu">
-			<!--
-				<li><a href="#">Register</a>
-				<li><a href="#">FAQ</a>
-				<li><a href="#">Sponsors</a>
-			-->
-			</ul>
-		</nav>
-	</header>
-	<div id="info">
-		<div id="logo">
-			<img src="assets/logo.png"/>
-			<table id="details">
-				<tr>
-					<td class="detailIcon"><i class="fa fa-clock-o"></i></td>
-					<td class="detailText">Saturday, <strong>November 14th</strong> - Sunday, November 15th</td>
-				</tr>
-				<tr>
-					<td class="detailIcon"><i class="fa fa-map-marker"></i></td>
-					<td class="detailText"><strong>Rensselaer Polytechnic Institute</strong> Troy, NY</td>
-				</tr>
-			</table>
+
+<header>
+<a id="mlh-trust-badge" style="position:fixed;top:0;right:50px;max-width:100px;width:10%;min-width: 60px;display:block;z-index:10000" href="https://mlh.io/?utm_campaign=Trust%20Badge" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/f2015.png" alt="MLH Official - Fall 2015" style="width:100%;" ></a>
+	<nav class="container">
+		<a href="#" class="six columns"><img src="assets/logo.png" alt="HackRPI" class=""/></a>
+		<ul id="menu" class="">
+			<li><a data-scroll href="/2015/assets/info.pdf">Info Packet</a></li>
+			<li><a data-scroll href="#prizes">Prizes</a></li>
+			<li><a data-scroll href="#faq">FAQ</a></li>
+			<li><a data-scroll href="#sponsors">Sponsors</a></li>
+		</ul>
+	</nav>
+</header>
+
+<section id="info" class="active">
+	<div id="infoWrap" class="container active">
+		<div id="details">
+			<h1>Come hack with us</h1>
+			<div class="detailIcon"><i class="fa fa-clock-o"></i></div><div class="detailText">Saturday, November 14 - Sunday, November 15</div><br />
+			<div class="detailIcon"><i class="fa fa-map-marker"></i></div><div class="detailText">Rensselaer Polytechnic Institute<br />Troy, NY</div>
 		</div>
-		<div id="prereg-form">
-			<h2>Receive notifications when 2015 registration opens!</h2>
+		<!--
+		<div id="register" class="eight columns">
+			<a href="http://status.hackrpi.com/">
+				<button>
+					<i class="fa fa-pencil"></i> Register
+				</button>
+			</a>
+		</div>
+		-->
+	</div>
+</section>
+
+<!--
+<section id="prereg">
+	<div id="preregWrap" class="container">
+		<div id="formWrap" class="sixteen columns">
+			<h1>Be notified when registration opens!</h1>
 			<form action="https://docs.google.com/forms/d/1JtYCqerayEgErLVsyUriRHkj05258dLwBhZ7ZlS-5QY/formResponse" method="POST" id="preregForm">
-				<input class="field" type="text" name="entry.287570484" placeholder="Name">
-				<input class="field" type="text" name="entry.1575150727" placeholder="E-Mail">
-				<input class="field" type="text" name="entry.147938571" placeholder="School">
+				<input type="text" name="entry.287570484" placeholder="Name">
+				<input type="text" name="entry.1575150727" placeholder="Email">
+				<input type="text" name="entry.147938571" placeholder="School">
 				<input type="hidden" name="submit" value="Submit">
-				<input class="button" type="submit" name="submitPrereg" value="Submit" id="preregSubmit">
+				<input type="submit" name="submitPrereg" value="Submit" id="preregSubmit">
 			</form>
-			<p id="prereg-success">
-			  Awesome! We'll send you an e-mail when registration is up.
-			</p>
 		</div>
 	</div>
-</div>
-<!--
+</section>
+
+<section id="preregSuccess">
+	<div id="preregSuccessWrap" class="container">
+		<h1>Awesome! We'll send you an email when registration opens.</h1>
+	</div>
+</section>
+-->
+
+<section id="photo">
+	<div id="boom" class="container">
+		<h1>500 HACKERS</h1>
+		<h1>24 HOURS</h1>
+	</div>
+</section>
+
+<section id="prizes">
+	<div id="prizeWrap" class="container">
+		<h1>Winners</h1>
+		<hr>
+		<div class="row clearfix">
+			<div class="prize-category eight columns">
+				<h2>Best Hardware Hack</h2>
+				<span class="winner_project">LE Droid</span>
+				<ul class="winners-list">
+					<li>Josh Makinen (Rensselaer Polytechnic Institute)</li>
+				</ul>
+				<span class="prize-text">
+					<strong>Prize:</strong> SSD Internal Hard Drive
+				</span>
+			</div>
+			<div class="prize-category eight columns">
+				<h2>Best Web Hack</h2>
+				<span class="winner_project">Online 6502 IDE</span>
+				<ul class="winners-list">
+					<li>Liam Rahav (Bergen County Academies)</li>
+					<li>Su Min Kim (Bergen County Academies)</li>
+					<li>Jay Mo (Bergen County Academies)</li>
+				</ul>
+				<span class="prize-text">
+					<strong>Prize:</strong> Sonos Speaker
+				</span>
+			</div>
+		</div>
+		<div class="row clearfix">
+			<div class="prize-category eight columns">
+				<h2>Best Data Science Hack</h2>
+				<span class="winner_project">LeapSign</span>
+				<ul class="winners-list">
+					<li>Alvin Leung (Rensselaer Polytechnic Institute)</li>
+					<li>Brandon Ip (Rensselaer Polytechnic Institute)</li>
+				</ul>
+				<span class="prize-text">
+					<strong>Prize:</strong> Dell Venue 10 Tablet
+				</span>
+			</div>
+			<div class="prize-category eight columns">
+				<h2>Best Mobile Hack</h2>
+				<span class="winner_project">RoadTip</span>
+				<ul class="winners-list">
+					<li>Zale Young (Middlebury College)</li>
+					<li>Tao Wang (Middlebury College)</li>
+					<li>Henry Swaffield (Middlebury College)</li>
+					<li>Tony Yanfeng Jin (Middlebury College)</li>
+					<li>Vaasu Taneja (Middlebury College)</li>
+				</ul>
+				<span class="prize-text">
+					<strong>Prize:</strong> Apple Watch
+				</span>
+			</div>
+		</div>
+		<div class="row clearfix">
+			<div class="prize-category eight columns">
+				<h2>Best Video Games / VR Hack</h2>
+				<span class="winner_project">Golf VR</span>
+				<ul class="winners-list">
+					<li>Numaer Zaker (Stony Brook University)</li>
+					<li>Timotius Sitorus (Stony Brook University)</li>
+					<li>Tony O'Halleran (Stony Brook University)</li>
+				</ul>
+				<span class="prize-text">
+					<strong>Prize:</strong> EVGA GeForce GTX 970 4GB
+				</span>
+			</div>
+			<div class="prize-category eight columns">
+				<h2>Best Humanitarian Hack</h2>
+				<span class="winner_project">Singularity</span>
+				<ul class="winners-list">
+					<li>Avinav Sharan (University at Buffalo)</li>
+					<li>Utsav Patel (University at Buffalo)</li>
+					<li>Mimanshu Shisodia (University at Buffalo)</li>
+					<li>Himanshu Sharma (University at Buffalo)</li>
+					<li>Ankit Sharma (University at Buffalo)</li>
+				</ul>
+				<span class="prize-text">
+					<strong>Prize:</strong> XBOX One/Playstation Bundle
+				</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="faq">
+	<div id="faqWrap" class="container">
+		<h1>FAQ</h1>
+		<hr>
+		<div class="row clearfix">
+			<div class="question one-third column">
+				<h2>Hacka-what?</h2>
+				<p>“The word "hackathon" is a portmanteau of the words "hack" and "marathon", where "hack" is used in the sense of playful, exploratory programming, not its alternate meaning as a reference to computer crime.” A hackathon is a time and a place for you to make something. Doesn’t matter if it’s a web app, a mobile app, a desktop app, or something in between.</p>
+			</div>
+			<div class="question one-third column">
+				<h2>But what if I can't code?</h2>
+				<p>Doesn’t matter. Turn up. If you’re interested in learning how to code, a hackathon is the perfect environment. If you’re more of a design or business type of person, find a team and ship your idea in a day.</p>
+			</div>
+			<div class="question one-third column">
+				<h2>How big should teams be? Can I hack alone?</h2>
+				<p>Teams should be at most 4 people total. You can hack alone, but it'll be less fun! Teamwork is a valuable skill.</p>
+			</div>
+		</div>
+		<div class="row clearfix">
+			<div class="question one-third column">
+				<h2>What if I don't have an idea or a team?</h2>
+				<p>No worries! We will have time at the beginning of the event dedicated to helping hackers who need a team brainstorm together and form teams</p>
+			</div>
+			<div class="question one-third column">
+				<h2>How will I get there?</h2>
+				<p>We will be sending buses to as many regions as possible, based on registration numbers for each school. If you are coming from an area that we are not sending a bus to, we will also be offering a limited number of travel reimbursements.</p>
+			</div>
+			<div class="question one-third column">
+				<h2>What should I bring?</h2>
+				<p>Make sure to bring your laptop, phone, necessary chargers, your student ID, toiletries and anything else you may need to make yourself comfortable for 24 hours. You don't need to worry about food or drink -- we've got that covered.</p>
+			</div>
+		</div>
+		<div class="row clearfix">
+			<div class="question one-third column" >
+				<h2>Can I come if I am a high school student or under 18?</h2>
+				<p>Absolutely! You will have to have a parent or legal guardian fill out your waiver prior to the event and you're good!</p>
+			</div>
+			<div class="question one-third column" >
+				<h2>What if I am a recent graduate?</h2>
+				<p>Recent graduates are welcome to participate as long as they graduated within the last year.</p>
+			</div>
+			<div class="question one-third column" >
+				<h2>What about hardware hacking?</h2>
+				<p>We provide hardware kits that don't require soldering, courtesy of MLH. We love hardware hacking and are looking into ways to allow you guys to make any kind of hardware hack you'd like.</p>
+			</div>
+		</div>
+		<!--<div class="row">
+			<div class="question one-third column" >
+				<h2>Question?</h2>
+				<p>Jean shorts dreamcatcher narwhal, Marfa raw denim Pitchfork bespoke paleo. Etsy Portland mustache farm-to-table Shoreditch. Master cleanse Tumblr synth craft beer Austin, irony ethical post-ironic typewriter put a bird on it.</p>
+			</div>
+			<div class="question one-third column">
+				<h2>I have other questions, who can I ask?</h2>
+				<p>Check out our ...</p>
+			</div>
+			<div class="question one-third column" >
+				<h2>Question?</h2>
+				<p>Jean shorts dreamcatcher narwhal, Marfa raw denim Pitchfork bespoke paleo. Etsy Portland mustache farm-to-table Shoreditch. Master cleanse Tumblr synth craft beer Austin, irony ethical post-ironic typewriter put a bird on it.</p>
+			</div>
+		</div> -->
+		<h2 id="code-of-conduct">Read Major League Hacking's <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">Code of Conduct</a></h2>
+	</div>
+</section>
+
+<section id="sponsors">
+	<div id="sponsorsWrap" class="container">
+		<h1>Sponsors</h1>
+		<center><span>Have Questions? Contact us at <a href="mailto:gohackrpi@gmail.com">goHackRPI@gmail.com</a> | Want to sponsor HackRPI? Read our <a href="assets/HackRPI Sponsor Information.pdf">information sheet</a>.</span></center>
+		<hr>
+			<div style="margin: 20px auto;"></div>
+		<!-- Platinum Sponsors -->
+		<div class="row tier-3">
+			<a href="http://www.tripadvisor.com/" class="sponsor column offset-by-three"><img src="assets/logos/tripadvisor.png" class="scale-with-grid"></a>
+		</div>
+		<hr/>
+		<!-- Gold Sponsors  -->
+		<div class="row tier-3">
+			<a href="http://www.tcs.com/" class="sponsor one-half column"><img src="assets/logos/tata.jpg" class="scale-with-grid"></a>
+			<a href="http://www.microsoft.com/" class="sponsor one-half column"><img src="assets/logos/microsoft.png" class="scale-with-grid"></a>
+		</div>
+		<hr/>
+		<!-- Silver Sponsors -->
+		<div class="row tier-2">
+			<a href="http://www.jnj.com/" class="sponsor one-third column"><img src="assets/logos/jnj.png" class="scale-with-grid"/></a>
+			<a href="http://apprenda.com/" class="sponsor one-third column"><img src="assets/logos/apprenda.png" class="scale-with-grid"/></a>
+			<a href="http://www.epic.com/" class="sponsor one-third column"><img src="assets/logos/epic.gif" class="scale-with-grid"/></a>
+			<a href="http://www.bloomberg.com" class="sponsor one-third column"><img src="assets/logos/bloomberg.png" class="scale-with-grid"></a>
+			<a href="https://www.blackstone.com/" class="sponsor one-third column"><img src="assets/logos/blackstone.jpg" class="scale-with-grid"></a>
+			<a href="https://www.tallan.com/" class="sponsor one-third column"><img src="assets/logos/tallan.jpeg" class="scale-with-grid"></a>
+			<a href="http://www.mitre.org/" class="sponsor one-third column"><img src="assets/logos/mitre.png" class="scale-with-grid"></a>
+			<a href="https://www.bose.com/" class="sponsor one-third column"><img src="assets/logos/bose.png" class="scale-with-grid"></a>
+			<a href="http://www.goldmansachs.com/" class="sponsor one-third column"><img src="assets/logos/goldmansachs.png" class="scale-with-grid"></a>
+			<a href="http://www.pitneybowes.com/us" class="sponsor one-third column offset-by-three"><img src="assets/logos/pitneybowes.jpg" class="scale-with-grid"></a>
+			<a href="https://3amteam.com/" class="sponsor one-third column"><img src="assets/logos/3am.png" class="scale-with-grid"></a>
+		</div>
+		<hr/>
+		<!-- Bronze Sponsors -->
+		<div class="row tier-3">
+			<a href="http://www.gcomsoft.com/" class="sponsor four columns offset-by-two"><img src="assets/logos/gcom.gif" class="scale-with-grid"></a>
+			<a href="https://www.soylent.com/" class="sponsor four columns"><img src="assets/logos/soylent.png" class="scale-with-grid"></a>
+			<a href="http://www.nebulouslabs.com/" class="sponsor four columns"><img src="assets/logos/nebulous.png" class="scale-with-grid"></a>
+		</div>
+	</div>
+</section>
+
+<section id="partners">
+	<div id="partnersWrap" class="container">
+		<h1>Partners</h1>
+		<hr>
+		<div class="row tier-s2">
+		<a href="http://mlh.io" class="sponsor one-third column"><img src="assets/mlh.png" class="scale-with-grid"></a>
+		<a href="http://www.cipce.rpi.edu/" class="sponsor one-third column"><img src="assets/logos/cipce.png" class="scale-with-grid"></a>
+		<a href="http://idea.rpi.edu/" class="sponsor one-third column"><img src="assets/logos/idea.png" class="scale-with-grid"></a>
+		<a href="http://lallyschool.rpi.edu/severino-center" class="sponsor one-third column"><img src="assets/logos/severino.jpg" class="scale-with-grid"></a>
+		<a href="http://rpi.edu" class="sponsor one-third column offset-by-three"><img src="assets/rpi.png" class="scale-with-grid"></a>
+		<a href="https://www.rpi.edu/dept/cdc/" class="sponsor one-third column"><img src="assets/logos/ccpd.gif" class="scale-with-grid"></a>
+	</div>
+</section>
+
 <footer>
 	<div id="footerWrap" class="container">
-		<h3>&copy; 2014 Rensselaer Hackathon Organization</h3>
+		<h3>&copy; 2014-2016 HackRPI</h3>
 		<ul class="">
 			<li><a href="https://instagram.com/goHackRPI" target="_BLANK" id="instagram"><i class="fa fa-instagram"></i> @goHackRPI</a></li>
 			<li><a href="https://twitter.com/goHackRPI" target="_BLANK" id="twitter"><i class="fa fa-twitter"></i> @goHackRPI</a></li>
@@ -80,7 +308,7 @@
 		</ul>
 	</div>
 </footer>
--->
+
 <script>smoothScroll.init();</script>
 
 </body>

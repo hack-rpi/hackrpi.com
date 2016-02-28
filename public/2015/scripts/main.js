@@ -29,14 +29,14 @@ $(document).ready(function() {
 	infoWrap.addEventListener("oTransitionEnd", infoWrapTransitionEnd, false);
 	infoWrap.addEventListener("otransitionend", infoWrapTransitionEnd, false);
 	
-	preregBtn.onclick = function() {
-		infoWrap.classList.remove("active");
-		if (!hastransitionend) {
-			info.classList.remove("active");
-			prereg.classList.add("active");
-			preregWrap.classList.add("active");
-		}
-	}
+	// preregBtn.onclick = function() {
+	// 	infoWrap.classList.remove("active");
+	// 	if (!hastransitionend) {
+	// 		info.classList.remove("active");
+	// 		prereg.classList.add("active");
+	// 		preregWrap.classList.add("active");
+	// 	}
+	// }
 	
 	/*prereg.addEventListener("transitionend", function(event) {
 		if (prereg !== event.target) return;
@@ -47,10 +47,10 @@ $(document).ready(function() {
 		
 	}, false);*/
 	
-	preregWrap.addEventListener("transitionEnd", preregWrapTransitionEnd, false);
-	preregWrap.addEventListener("webkitTransitionEnd", preregWrapTransitionEnd, false);
-	preregWrap.addEventListener("oTransitionEnd", preregWrapTransitionEnd, false);
-	preregWrap.addEventListener("otransitionend", preregWrapTransitionEnd, false);
+	// preregWrap.addEventListener("transitionEnd", preregWrapTransitionEnd, false);
+	// preregWrap.addEventListener("webkitTransitionEnd", preregWrapTransitionEnd, false);
+	// preregWrap.addEventListener("oTransitionEnd", preregWrapTransitionEnd, false);
+	// preregWrap.addEventListener("otransitionend", preregWrapTransitionEnd, false);
 	
 	/*preregSuccess.addEventListener("transitionend", function(event) {
 		if (preregSuccess !== event.target) return;
@@ -61,35 +61,35 @@ $(document).ready(function() {
 		
 	}, false);*/
 	
-	preregSuccessWrap.addEventListener("transitionEnd", preregSuccessWrapTransitionEnd, false);
-	preregSuccessWrap.addEventListener("webkitTransitionEnd", preregSuccessWrapTransitionEnd, false);
-	preregSuccessWrap.addEventListener("oTransitionEnd", preregSuccessWrapTransitionEnd, false);
-	preregSuccessWrap.addEventListener("otransitionend", preregSuccessWrapTransitionEnd, false);
+	// preregSuccessWrap.addEventListener("transitionEnd", preregSuccessWrapTransitionEnd, false);
+	// preregSuccessWrap.addEventListener("webkitTransitionEnd", preregSuccessWrapTransitionEnd, false);
+	// preregSuccessWrap.addEventListener("oTransitionEnd", preregSuccessWrapTransitionEnd, false);
+	// preregSuccessWrap.addEventListener("otransitionend", preregSuccessWrapTransitionEnd, false);
 	
 	/*setTimeout(function() {
 		info.classList.add("active");
 		infoWrap.classList.add("active");
 	}, 200);*/
 	
-	$("#preregForm").submit(function() {
-		$theForm = $(this);
+	// $("#preregForm").submit(function() {
+	// 	$theForm = $(this);
 		
-		$.ajax({
-			type: $theForm.attr("method"),
-			url: $theForm.attr("action"),
-			dataType: "xml",
-			data: $theForm.serialize(),
-		});
+	// 	$.ajax({
+	// 		type: $theForm.attr("method"),
+	// 		url: $theForm.attr("action"),
+	// 		dataType: "xml",
+	// 		data: $theForm.serialize(),
+	// 	});
 		
 		// KNOWN ISSUE: Currently, the form will submit to Google Forms, 
 		// but there is no response back because of a cross domain issue
 		// that is out of our control. Since this is just preregistration,
 		// and needs to be up, I will leave this error, and hopefully we will
 		// use something better for actual registration.
-		$("#preregForm").hide();
-		$("#prereg-success").show();
-		return false;
-	});	
+// 		$("#preregForm").hide();
+// 		$("#prereg-success").show();
+// 		return false;
+// 	});	
 });
 
 function infoWrapTransitionEnd(event) {

@@ -1,18 +1,10 @@
 @font-face{
-font-family: 'OpenSans Regular';
-	src: url('../fonts/OpenSans-Regular.ttf');
-}
-@font-face{
-font-family: 'OpenSans Bold';
-	src: url('../fonts/OpenSans-Bold.ttf');
-}
-@font-face{
 font-family: 'CrimsonText Roman';
 	src: url('../fonts/CrimsonText-Roman.ttf');
 }
 @font-face{
 font-family: 'FontAwesome';
-	src: url('../fonts/fontawesome-webfont.ttf');
+	src: url('/lib/font-awesome/fonts/fontawesome-webfont.ttf');
 }
 body{
 font-family:"HelveticaNeue", "Helvetica Neue", "Helvetica", Arial, "MS Trebuchet", sans-serif;
