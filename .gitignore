@@ -1,1 +1,3 @@
 public/lib
+**/*.xcf
+public/style/*.css

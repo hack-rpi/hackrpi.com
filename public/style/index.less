@@ -104,16 +104,35 @@ span.detailText {
 
 
 .content {
-  position: relative;
-  top: 300px;
-  height: 300px;
+  background: url(../assets/community.png) no-repeat center center fixed;
+  background-size: cover;
   width: 100%;
+  height: 100%;
 }
 
 .content #splash {
-  font-size: 64px;
-  font-weight: bold;
-  position: absolute;
+  width: 100%;
+  text-align: center;
+  
+  @media only screen and (max-height: @small) {
+    padding-top: 10px;
+  }
+  @media only screen and (min-height: @small) and (max-height: 600px) {
+    padding-top: 50px;
+  }
+  @media only screen and (min-height: 600px) {
+    padding-top: 20%;
+  }
+  
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(150, 32, 32);
+    font-size: 18px;
+  }
+  a:hover {
+    color: #FFF;
+  }
 }
 
 div#prereg-form {
@@ -204,6 +223,14 @@ footer {
   
   div#footerWrap {
     padding: 40px 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(192, 52, 40);
+  }
+  a:hover {
+    color: #FFF;
   }
   
   .social-media {
