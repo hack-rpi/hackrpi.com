@@ -181,7 +181,7 @@ span.detailText {
 }
 
 section {
-   @media only screen and (max-width: @small) {
+  @media only screen and (max-width: @small) {
     width: 95%;
   }
   @media only screen and (min-width: @small) and (max-width: @large) {
@@ -202,11 +202,15 @@ section#section-1 {
     display: 	   -ms-flex;
     display: 		     flex;
     flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
 
     .question {
-      margin: auto;
+      margin-bottom: 20px;
+      color: @red;
       p {
         padding: 5px;
+        color: black;
       }
     }
 
@@ -252,7 +256,16 @@ section#section-1 {
 
 section#rules {
   text-align: center;
-  padding: 50px;
+  
+  @media only screen and (max-width: @small) {
+    padding: 50px 5px;
+  }
+  @media only screen and (min-width: @small) and (max-width: @large) {
+    padding: 50px;
+  }
+  @media only screen and (min-width: @large) {
+    padding: 50px;
+  }
   a {
     color: @red;
     font-size: 32px;
