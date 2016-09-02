@@ -274,8 +274,44 @@ section#rules {
 }
 
 section#section-2 {
+  .tier {
+    display: -webkit-flex;
+    display: 	   -ms-flex;
+    display: 		     flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
 
+  #tier-1 {
+    margin-top: 40px;
+  }
 
+  img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+
+  @media only screen and (max-width: @small) {
+    #tier-1 div { flex-basis: @small; }
+    #tier-2 div { flex-basis: @small / 3; }
+    #tier-3 div { flex-basis: @small / 4; }
+    #tier-4 div { flex-basis: @small / 5; }
+  }
+  @media only screen and (min-width: @small) and (max-width: @large) {
+    #tier-1 div { flex-basis: @small; }
+    #tier-2 div { flex-basis: @small / 2; }
+    #tier-3 div { flex-basis: @small / 2.5; }
+    #tier-4 div { flex-basis: @small / 3; }
+  }
+  @media only screen and (min-width: @large) {
+    #tier-1 div { flex-basis: 600px; }
+    #tier-2 div { flex-basis: 300px; }
+    #tier-3 div { flex-basis: 200px; }
+    #tier-4 div { flex-basis: 200px; }
+  }
 }
 
 div#prereg-form {
