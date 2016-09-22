@@ -95,28 +95,48 @@ font-weight:bold;
 div#logo img {
   width:100%;
 }
-div#info {
+
+#banner {
   text-align: center;
   background-color: @red;
   padding: 10px 0;
-}
-span.detailIcon {
-  color: rgb(150, 32, 32);
-  font-size:28px;
-  padding-right:10px;
-  text-align:center;
-}
-span.detailText {
-  color:#eee;
-  font-family: 'OpenSans Regular', Helvetica, Arial, sans-serif;
-  font-size:24px;
-  line-height:1.5;
+  display: -webkit-flex;
+  display: 	   -ms-flex;
+  display: 		     flex;
+  flex-wrap: wrap;
+  padding-right: 110px;
+  
+  div {
+    color: #eee;
+    font-family: 'OpenSans Regular', Helvetica, Arial, sans-serif;
+    span.detailText {
+      line-height: 1.5;
+      text-align: center;
+    }
+    span.detailIcon {
+      text-align: center;
+      color: rgb(150, 32, 32);
+      padding-right: 10px;
+      font-size: 28px;
+    }
+
+    @media only screen and (max-width: @small) {
+      flex-basis: 100%;
+      margin-left: 10px;
+      font-size: 18px;
+      max-width: 250px;
+    }
+    @media only screen and (min-width: @small) {
+      flex-basis: 50%;
+      font-size: 24px;
+    }
+  }
 }
 
 
 .content {
   background-attachment: fixed;
-  background-image: url(../assets/community.png);
+  background-image: url(../assets/community.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -129,7 +149,15 @@ span.detailText {
     
     img.logo {
       margin: 150px 0;
-      width: 50%;
+      @media only screen and (max-width: @small) {
+        width: 95%;
+      }
+      @media only screen and (min-width: @small) and (max-width: @large) {
+        width: 90%;
+      }
+      @media only screen and (min-width: @large) {
+        width: 50%;
+      }
     }
     img.screw {
       width: 100px;
