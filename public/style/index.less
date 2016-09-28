@@ -2,6 +2,7 @@
 @large: 960px;
 
 @red: rgb(192, 52, 40);
+@light_red: lighten(@red, 30%);
 
 @font-face {
 font-family: 'CrimsonText Roman';
@@ -190,6 +191,133 @@ div#logo img {
   }
 }
 
+div#navigation {
+  display: -webkit-flex;
+  display: 	   -ms-flex;
+  display: 		     flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-around;
+
+  div {
+    text-align: center;
+    font-variant-caps: small-caps;
+    font-size: 20px;
+    
+    a {
+      text-decoration: none;
+      color: @red;
+            
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    @media only screen and (max-width: @small) {
+      flex-basis: 95%;
+    }
+    @media only screen and (min-width: @small) and (max-width: @large) {
+      flex-basis: 50%;
+    }
+    @media only screen and (min-width: @large) {
+      flex-basis: 10%;
+    }
+  }
+}
+
+#information {
+  display: -webkit-flex;
+  display: 	   -ms-flex;
+  display: 		     flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-around;
+
+  .information-item {
+    h3 {
+      font-variant-caps: small-caps;
+      color: @red;
+      padding-left: 10px;
+    }
+    p {
+      padding-left: 10px;
+    }
+  }
+
+  @media only screen and (max-width: @small) {
+    .information-item {
+      flex-basis: 95%;
+    }
+  }
+  @media only screen and (min-width: @small) and (max-width: @large) {
+    .information-item {
+      flex-basis: 50%;
+    }
+  }
+  @media only screen and (min-width: @large) {
+    .information-item {
+      h1 pre {
+        text-align: center;
+      }      
+    }
+    #schedule {
+      flex-basis: 60%;
+    }
+    #hype {
+      flex-basis: 40%;
+    }
+  }
+
+}
+
+#schedule {
+  padding-bottom: 50px;
+  
+  p {
+    // text-align:center;
+    padding: 15px;
+  }
+  
+  table {
+    margin: auto;
+    thead th {
+      background-color: #FFF;
+      text-align: center;
+    }
+    tr:nth-child(2n+1) {
+      background-color: @light_red;
+    }
+    tr td:nth-child(2) {
+      @media only screen and (max-width: @small) {
+        padding-right: 0px;
+      }
+      @media only screen and (min-width: @small) and (max-width: @large) {
+        padding-right: 20px;
+      }
+      @media only screen and (min-width: @large) {
+        padding-right: 50px;
+      }
+    }
+
+    @media only screen and (max-width: @small) {
+      font-size: 12px;
+    }
+    @media only screen and (min-width: @small) and (max-width: @large) {
+      font-size: 14px;
+    }
+    @media only screen and (min-width: @large) {
+      font-size: 18px;
+      tr td:first-child {
+        padding-left: 20px;
+      }
+      tr td:last-child {
+        padding-right: 20px;
+      }
+    }
+
+  }
+}
+
 .info {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -296,7 +424,7 @@ section#rules {
   }
   a {
     color: @red;
-    font-size: 32px;
+    font-size: 24px;
     text-decoration: none;
   }
 }
