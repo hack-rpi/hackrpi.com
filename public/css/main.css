@@ -1244,7 +1244,7 @@ header .social-links ul li a:focus {
  * ------------------------------------------------------------------- */
 #info {
 	background: #FFFFFF;
-	background-image: url(../images/info-bg.jpg);
+	/*background-image: url(../images/info-bg.jpg);*/
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center;
