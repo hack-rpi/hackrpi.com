@@ -69,6 +69,8 @@ body {
  * links - (_document-setup)
  * ------------------------------------------------------------------- */
 a, a:visited {
+	text-decoration: underline;
+	text-underline-position: under;
 	color: #057f78;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
