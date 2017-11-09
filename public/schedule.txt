@@ -1,0 +1,39 @@
+10:30:00 AM    Check-in opens for students
+
+12:00:00 PM    Opening Ceremony
+
+1:00:00 PM    Lunch
+
+2:00:00 PM    Redshift Recruiting Tech Talk
+
+3:00:00 PM    Pitch Competition
+
+4:30:00 PM    Trip Advisor Tech Talk
+
+6:00:00 PM    MixMax Tech Talk
+
+7:00:00 PM    Super Smash Bros Melee Tournament
+
+8:00:00 PM    Dinner
+
+9:00:00 PM    Cup Stacking
+
+12:00:00 AM    Midnight Snack
+
+7:30:00 AM    Breakfast
+
+12:00:00 PM    Lunch
+
+12:30:00 PM    Hacking Ends
+
+1:00:00 PM    Expo A begins
+
+1:45:00 PM    Expo A ends
+
+2:00:00 PM    Expo B begins
+
+2:45:00 PM    Expo B ends
+
+3:15:00 PM    Closing Ceremony begins
+
+4:00:00 PM    Closing Ceremony ends

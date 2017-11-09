@@ -93,13 +93,9 @@
 		   			</div>
 
 			  			<div class="bottom-text">
-			  				<!-- <h1>HackRPI is coming soon.</h1> -->
-							<a class="typeform-share button" href="https://hackrpi.typeform.com/to/KI4Eo0" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#f01326;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Register Now </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+			  				<h1>HackRPI is coming soon.</h1>
 							  <h1>November 11th and 12th</h1>
-							  <h3 style="color:white">In the Darrin Communications Center at 12:00pm</h3>
 							<p>
-							 <p>NEWS: Event registration opens at 10:00am </p>
-							 <h1> <a href="/schedule.txt" >Schedule </a> </h1>
 							 The first intercollegiate hackathon hosted at Rensselaer Polytechnic Institute, completely organized and run by RPI students.
 				  			</p>
 			  			</div>
@@ -376,13 +372,12 @@
    <!-- CTA Section
    ================================================== -->
 	<section id="cta">
-	
+
    	<div class="row cta-wrap">
    		<div class="col-twelve cta-content">
 	     		<h2 class="h01" style="padding-bottom: 10px;">Sponsors</h2>
-						
-			<img style="background:whitesmoke" src="/assets/CompLogos.png" alt="Sponsors: Trip Advisor, Bloomberg, redShift, Servino Center, Microsoft, eShipRPI, MLH"/> 
-        <!--       <div id="sponsorship" style="margin: 0 auto; margin-left:-300px; margin-right: 75px;">
+							<h2>Interested in becoming a sponsor? Here's everything you need to know!</h2>
+              <div id="sponsorship" style="margin: 0 auto; margin-left:-300px; margin-right: 75px;">
 							<script async>
 								var desktopHTML = "<object type=\"application\/pdf\" width=\"150%\" height=\"1125\" data=\"https:\/\/hackrpi.com\/assets\/sponsorship.pdf\"><a href=\"https:\/\/hackrpi.com\/assets\/sponsorship.pdf\" class=\"button\">Sponsorship Information<\/a><\/object>"
 								var mobileHTML = "<a href=\"https:\/\/hackrpi.com\/assets\/sponsorship.pdf\" class=\"button\">Sponsorship Information<\/a>"
@@ -397,7 +392,7 @@
 
 							</script>
             </div>
-		-->
+
 		      <p class="lead">
 
 				</p>
